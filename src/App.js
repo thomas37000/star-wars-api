@@ -1,12 +1,10 @@
 import "./App.css";
-import Characters from "./components/Characters";
-import Navbar from "./components/Navbar";
+import ReactRouter from "./components/router/ReactRouter";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Characters />
+      <ReactRouter />
     </div>
   );
 }

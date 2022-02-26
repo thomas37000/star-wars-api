@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -22,24 +23,26 @@ const Navbar = () => {
       </div>
       <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
         <div className="text-sm lg:flex-grow">
-          <a
-            href="#responsive-header"
+          <Link
+            to="/"
             className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-green-500 mr-4"
           >
             All Characters
-          </a>
-          <a
-            href="#responsive-header"
+          </Link>
+
+          <Link
+            to="/the-alliance"
             className="block mt-4 lg:inline-block lg:mt-0 text-cyan-300 hover:text-white mr-4"
           >
             the Alliance
-          </a>
-          <a
-            href="#responsive-header"
+          </Link>
+
+          <Link
+            to="/the-empire"
             className="block mt-4 lg:inline-block lg:mt-0 text-red-500 hover:text-white"
           >
             the Empire
-          </a>
+          </Link>
         </div>
       </div>
     </nav>
